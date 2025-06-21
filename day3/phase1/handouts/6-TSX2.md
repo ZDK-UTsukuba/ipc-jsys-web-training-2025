@@ -126,3 +126,74 @@ export default function IsEven(props: Props) {
     <summary>ヒント</summary>
     ツイートの有無は、ツイートを保持する状態変数（おそらく配列だと思います）の長さをみることによって判断することができます。即ち、その長さが 0 であるかそうでないかによって条件分岐をすればいいでしょう。
 </details>
+
+---
+
+### 余談
+
+ツイッターみたいなSNSの表示を作るに当たって、本当にどこかでSNSのサーバを動かしておいて、研修参加者の皆さんが投稿をすると実際にサーバに投稿が蓄積され、投稿を取得するとみんなの投稿が見られると面白いかと考えました。
+
+ということで実装しました。
+[こちら](https://github.com/sohosai/training2025-backend)がリポジトリです。
+README.mdになにやら書いてありますが、書いてあるようなデータ形式が返ってくるということです。
+
+このようにインターネットを通じてデータを取得したり投稿したりする際には`fetch`という関数を使います。
+
+- データを取得する場合
+
+```tsx
+const response = await fetch(
+  "https://training25api.playground.sohosai.com/posts",
+);
+```
+
+- データを投稿する場合
+
+```tsx
+const response = await fetch(
+  "https://training25api.playground.sohosai.com/posts",
+  {
+    method: "POST",
+    body: JSON.stringify({
+      text: "投稿内容の文字列 (string)",
+      created_by:
+        "投稿をした人(特にユーザ認証などはないので適当にユーザ名でも入れてください) (string)",
+    }),
+  },
+);
+```
+
+`fetch`が行うようなインターネットを通じてデータをやり取りする処理は、待ち時間が発生する処理です。
+それが実行されるのを待ってしまうと、他の表示の処理が行えないことになってしまいます。
+そこで`fetch`は非同期関数として実装されており、呼び出すと非同期的に(並列処理的に)処理が実行されます。
+
+そして`fetch`関数呼び出しの前に`await`という表現を付けてやることで、非同期処理が終了したタイミングでその続きを処理することができます。
+
+このような場合のコンポーネントの書き方は[9-演習.md](https://github.com/ZDK-UTsukuba/ipc-jsys-web-training-2025/blob/main/day3/phase1/handouts/9-%E6%BC%94%E7%BF%92.md) にもありますが、
+いかにも示しておきます。
+
+```tsx
+import { useState, useEffect } from "react";
+
+// ここからコンポーネントの内部
+const callback = async () => {
+  const DATA_URL = "https://training25api.playground.sohosai.com/posts";
+
+  const response = await fetch(DATA_URL);
+  if (!response.ok) {
+    alert("データ取得エラー");
+    return [];
+  }
+
+  const data = (await response.json()) as unknown as KdbData;
+  setKdbData(data);
+};
+
+useEffect(() => {
+  (async () => await callback())();
+}, []);
+// ここまで
+```
+
+今回jsysが用意したツイッターみたいなSNSのサーバは、クライアントのアプリがないので誰も使ってくれません...
+ぜひ、みなさんがSNSの表示アプリを作ってみてください!!
