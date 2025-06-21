@@ -1,10 +1,13 @@
 # 6 - TSX 2
+
 4 章では、コンポーネントの定義方法や props、式の表示などについて扱いました。本章では、React のコンポーネントにおける繰り返しや条件分岐の手法について述べていきます。
 
 ## 6.1 繰り返し
+
 React では、繰り返しの手法を用いることによって同じコンポーネントを任意の数だけ表示させることができるようになります。次の例は、5 章で出てきた `Names.tsx` の名前の表示方法を箇条書きに改善したプログラムです。
 
 **Names2.tsx**
+
 ```tsx
 import { useState } from "react";
 
@@ -38,9 +41,9 @@ export default function Names() {
 このプログラムでは、`names.join()` によって行っていた処理が次のように変更されています。
 
 ```tsx
-{names.map((name, index) => (
-    <li key={index}>{name}</li>
-))}
+{
+  names.map((name, index) => <li key={index}>{name}</li>);
+}
 ```
 
 このように、**配列に対して `map` 関数を呼び出し、その返り値としてコンポーネントを返してあげることで繰り返してコンポーネントを表示することができます**。[Array.prototype.map() - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map) には、`map` 関数は次のような挙動をすると述べられています。
@@ -50,21 +53,28 @@ export default function Names() {
 上記の例のように、単一のコンポーネントを返すのであれば、`=>` の後のコンポーネントを `()` で囲ってあげれば良いですが、複数の文からなる処理を記述して最終的にコンポーネントを返したいのであれば、次の例のように **`{}` と `return` 文を使用する必要**があります。
 
 ```tsx
-{names.map((name, index) => {
+{
+  names.map((name, index) => {
     const prefix = "test";
-    return <li key={index}>{prefix}:{name}</li>;
-})}
+    return (
+      <li key={index}>
+        {prefix}:{name}
+      </li>
+    );
+  });
+}
 ```
 
 また、**繰り返されるコンポーネントの最親のコンポーネントには `key` 属性を渡す**必要があります。通常、この値は繰り返しのインデックスを指定します。
 
 ## 6.2 演習 1
+
 `src/components/TwitterModoki.tsx` を作成して、次のようなコンポーネントを作成して下さい。ただし、今までに作成した `Tweet` と `CreateTweet` コンポーネントを使用して下さい（必要に応じて内容は修正して下さい）。
 
 1. CreateTweet コンポーネントにて文字が入力できるようになっている
 2. 「ツイート」ボタンを押すとツイート入力欄にツイートが表示される
 3. 画面イメージ
-![](_images/6_1.png)
+   ![](_images/6_1.png)
 
 <details>
     <summary>ヒント</summary>
@@ -78,9 +88,11 @@ export default function Names() {
 </details>
 
 ## 6.3 条件分岐
+
 React では、状態や props の値に応じて表示するコンポーネントを出し分ける条件分岐のための仕組みがあります。次の例は、入力された値が 2 で割り切れるかどうかによって表示が切り替わるコンポーネントです。
 
 **IsEven.tsx**
+
 ```tsx
 type Props = {
   n: number;
@@ -107,6 +119,7 @@ export default function IsEven(props: Props) {
 一方で `||` 演算子はどうでしょうか。OR 式の評価には**短絡評価**と呼ばれる評価方法があり、この方法で**は式を構成する部分式のいずれかが真となれば式全体の評価結果も真**になります。即ち、部分式を最後まで評価しないことがあるわけです。JavaScript も短絡評価を採用しているため、左から順に部分式が評価されることを考えれば、式の最後の部分式が評価されるのはそれより前の部分式が全て偽だった場合のみです。この特性を利用すれば、最後の部分式にコンポーネントを置けば上述の通り全体としては真と評価されるので、やはり式の値はコンポーネントとなります。
 
 ## 6.4 演習 2
+
 `src/components/TwitterModoki.tsx` を修正して、投稿されたツイートがない時には「ツイートはありません」、そうでないときにはこれまで通りツイートが表示されるようにして下さい。
 
 <details>
