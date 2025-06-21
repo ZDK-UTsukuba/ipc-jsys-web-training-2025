@@ -1,11 +1,11 @@
 <hr>
-<h2 align="center">IPC  / jsys 合同 Web 研修 2024</h2>
-<p align="center">2024/6/8, 15, 16</p>
+<h2 align="center">IPC  / jsys 合同 Web 研修 2025</h2>
+<p align="center">2024/6/21~2025/06/22</p>
 <p align="center">⭐️</p>
 <p align="center">by <a  href="https://x.com/chururi_">ちゅるり</a> / <a href="https://x.com/kyoto_inaniwa">いなにわうどん</a></p>
 <hr>
 
-このリポジトリは 2024/6/8, 15, 16 に開催される IPC / jsys 合同 Web 研修 2024 の研修資料リポジトリです。主に Web 開発をしたことがない 1 年生を対象としています。本研修では 3 日間で HTML, JavaScript, CSS の入門から React, TypeScript によるモダンな Web 開発までを体験することを目標としています。
+このリポジトリは 2025/6/21, 22 に開催される IPC / jsys 合同 Web 研修 2025 の研修資料リポジトリです。主に Web 開発をしたことがない 1 年生を対象としています。本研修では 3 日間で HTML, JavaScript, CSS の入門から React, TypeScript によるモダンな Web 開発までを体験することを目標としています。
 
 ## 内容
 本資料は 3 日間かけて Web プログラミングの基礎の学習から、モダンなフロントエンド開発の体験までを行うことを想定しています。各日程の内容はフェーズ 1、フェーズ 2…… と分けられ、それらは各日での学習内容によって分けられています。資料の内容はおおよそ次の通りです。
