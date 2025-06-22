@@ -170,7 +170,7 @@ pElement.setAttribute('id', 'test');
     const pElement = document.createElement('p');
 
     // 値を設定
-    pElement.textValue = 'Hello, World!';
+    pElement.textContent = 'Hello, World!';
 
     // 追加
     document.getElementById('root').appendChild(pElement);
