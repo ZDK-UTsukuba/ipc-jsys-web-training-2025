@@ -13,15 +13,15 @@ description: "React の基本を学んだのち、React を用いて実用的な
 
 ## 目次
 
-1. [はじめに](/day3/phase1/01-hajimeni/)
-2. [環境構築](/day3/phase1/02-kankyo-kouchiku/)
-3. [概論](/day3/phase1/03-gairon/)
-4. [TSX 1](/day3/phase1/04-tsx1/)
-5. [状態](/day3/phase1/05-joutai/)
-6. [TSX 2](/day3/phase1/06-tsx2/)
-7. [副作用](/day3/phase1/07-fukusayou/)
-8. [CSS](/day3/phase1/08-css/)
-9. [演習](/day3/phase1/09-enshu/)
+1. [はじめに](/frontend/day3/phase1/01-hajimeni/)
+2. [環境構築](/frontend/day3/phase1/02-kankyo-kouchiku/)
+3. [概論](/frontend/day3/phase1/03-gairon/)
+4. [TSX 1](/frontend/day3/phase1/04-tsx1/)
+5. [状態](/frontend/day3/phase1/05-joutai/)
+6. [TSX 2](/frontend/day3/phase1/06-tsx2/)
+7. [副作用](/frontend/day3/phase1/07-fukusayou/)
+8. [CSS](/frontend/day3/phase1/08-css/)
+9. [演習](/frontend/day3/phase1/09-enshu/)
 
 ## 参考文献
 

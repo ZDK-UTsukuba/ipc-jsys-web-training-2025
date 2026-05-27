@@ -9,9 +9,9 @@ description: "1 日目では Web ページを構成する 3 つの言語（HTML,
 
 | フェーズ | 内容 | 形式 |
 | --- | --- | --- |
-| [Phase 1 — HTML](/day1/phase1/) | HTML 言語の性質と、簡単な Web ページの作り方 | Markdown |
-| [Phase 2 — CSS](/day1/phase2/) | CSS（Cascading Style Sheets）による装飾 | PDF |
-| [Phase 3 — JavaScript](/day1/phase3/) | JavaScript の基本と DOM 操作・fetch API | Markdown |
+| [Phase 1 — HTML](/frontend/day1/phase1/) | HTML 言語の性質と、簡単な Web ページの作り方 | Markdown |
+| [Phase 2 — CSS](/frontend/day1/phase2/) | CSS（Cascading Style Sheets）による装飾 | PDF |
+| [Phase 3 — JavaScript](/frontend/day1/phase3/) | JavaScript の基本と DOM 操作・fetch API | Markdown |
 
 ## 事前準備
 

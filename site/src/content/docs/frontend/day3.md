@@ -9,4 +9,4 @@ description: "React の基本を学んだのち、React を用いて実用的な
 
 | フェーズ | 内容 |
 | --- | --- |
-| [Phase 1 — React](/day3/phase1/) | React の基本、TSX、状態、副作用、CSS、最終演習 |
+| [Phase 1 — React](/frontend/day3/phase1/) | React の基本、TSX、状態、副作用、CSS、最終演習 |
