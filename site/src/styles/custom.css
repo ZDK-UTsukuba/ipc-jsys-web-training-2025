@@ -1,0 +1,13 @@
+:root {
+  --sl-font: "Hiragino Sans", "ヒラギノ角ゴシック", "Yu Gothic", "Meiryo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+:root[data-theme="dark"] {
+  --sl-color-accent-low: #1a2540;
+  --sl-color-accent: #3b82f6;
+  --sl-color-accent-high: #93c5fd;
+}
+:root[data-theme="light"] {
+  --sl-color-accent-low: #dbeafe;
+  --sl-color-accent: #2563eb;
+  --sl-color-accent-high: #1e40af;
+}
