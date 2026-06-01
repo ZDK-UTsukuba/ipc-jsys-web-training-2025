@@ -1,10 +1,14 @@
 ---
-title: Web 研修 2025 ドキュざうるす
-description: IPC / jsys 合同 Web 研修 2025 の研修資料 — HTML / CSS / JavaScript / TypeScript / React を 3 日間で学ぶ
+title: jsys Web 研修 2026
+description: IPC / jsys 合同 Web 研修 2026 の研修資料 — HTML / CSS / JavaScript / TypeScript / React を 3 日間で学ぶ
 template: splash
 hero:
   tagline: 3 日間で学ぶ、モダンな Web フロントエンド開発の入門
   actions:
+    - text: フロントエンドをやってみる
+      link: /frontend/
+      icon: right-arrow
+      variant: primary
     - text: Day 1 からはじめる
       link: /frontend/day1/
       icon: right-arrow
@@ -18,7 +22,31 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## このサイトについて
 
-このサイトは **2025/6/21, 22 に開催される IPC / jsys 合同 Web 研修 2025** の研修資料を、Astro Starlight で再構成した非公式ドキュメントサイトです。Web 開発をしたことがない 1 年生を主な対象としており、3 日間で **HTML / CSS / JavaScript** の入門から、**React + TypeScript** によるモダンな Web 開発までを体験することを目標とします。
+このサイトは 2026/6/6, 7, 13, 14 の4日間に開催される jsys 26 ネットワーク部門研修の資料です。
+
+- Web フロントエンド
+- Web バックエンド
+の両方に対応しており、
+Web開発やプログラミングやコンピュータの経験、それぞれの興味に応じて、
+どちらかのコースを選択して進めてもらうことを想定しています。
+
+各コースの各日程の内容は、より小さいフェーズに分割されています。
+特に経験がない人は上から順に読み進めることを想定していますが、
+最初の方の内容は経験者にとってはすでに知っていて退屈かもしれません。
+自分が分かるところまで適宜飛ばして進めてもらって構いません。
+とにかく、おもしろそうなところを手を動かしながら読むことを強く推奨します。
+左サイドバーから直接フェーズ単位の章へ飛ぶこともできます。
+
+PDF で配布されている資料（フロントエンド Day 1 Phase 2 / Day 2 Phase 0・1）は、ページ内に PDF ビューアを埋め込んでありますが、
+ブラウザによっては別タブで開いた方が読みやすいことがあります。
+
+### フロントエンド
+
+Web 開発をしたことがない 1 年生も取り組めるように、
+3 日間で **HTML / CSS / JavaScript** の入門から、**React + TypeScript** によるモダンな Web 開発までを体験することを目標として書かれています。
+
+2024, 2025年度に行われた IPC / jsys 合同 Web 研修 の研修資料を、
+Astro Starlight で再構成しました。
 
 <CardGrid stagger>
   <Card title="Day 1 — Web の基礎" icon="document">
@@ -35,8 +63,37 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
   </Card>
 </CardGrid>
 
-## 進めかた
+### バックエンド
 
-各日程の内容は **フェーズ 1 / フェーズ 2 …** に分割されており、上から順に読み進めることを想定しています。手を動かしながら読むことを強く推奨します。左サイドバーから直接フェーズ単位の章へ飛ぶこともできます。
+Web開発と言ったときに、ブラウザに表示されるインタラクティブできれいなUIを作ることを想像する人が多いかも知れません。
 
-PDF で配布されている資料（Day 1 Phase 2 / Day 2 Phase 0・1）は、ページ内に PDF ビューアを埋め込んでありますが、ブラウザによっては別タブで開いた方が読みやすいことがあります。
+しかし、SNSやオンラインショッピングサイト、メッセージングツールのWeb版...というようなWebサービスは、
+ブラウザで動くフロントエンドだけで実現されているのではありません。
+
+ユーザからは見えないどこかにあるサーバで動いている、バックエンドとよばれるソフトウェアの部品が、
+ユーザや様々なモノのデータを管理し、ユーザの必要に応じて提供することで、Webサービスは動いているのです。
+
+一見地味に思えますが、縁の下の力持ち的な重要な役割を占めているのです。
+
+そんな「Webバックエンド」の開発に、興味は湧きませんか?
+
+バックエンドコースでは、
+Web開発の経験がない人でも取り組めるように、「バックエンドって何をしているの?」から始めて、匿名掲示板のようなWebアプリを作ることを目指します。
+ただ、なんらかのプログラミング言語は触ったことがあるくらいの経験値を期待しているのでちょっぴり難しいかもしれません。
+フロントエンドコースでTypeScriptまでやったのでこっちを見てみるというのもありでしょう。
+
+
+<CardGrid stagger>
+  <Card title="Day 1 — Web の基礎" icon="document">
+    [HTML](/frontend/day1/phase1/) でドキュメントの構造を記述し、[CSS](/frontend/day1/phase2/) で装飾し、[JavaScript](/frontend/day1/phase3/) でインタラクションを与える、Web の三本柱を体験します。
+  </Card>
+  <Card title="Day 2 — 開発環境を整える" icon="setting">
+    [シェル操作](/frontend/day2/phase0/) を学んで CUI に親しみ、[TypeScript](/frontend/day2/phase1/) で堅牢な静的型付きプログラミングへ踏み出します。
+  </Card>
+  <Card title="Day 3 — React" icon="rocket">
+    [React](/frontend/day3/phase1/) の基本を学び、コンポーネント・状態管理・副作用を理解した上で、実用的な SPA を作成します。
+  </Card>
+  <Card title="著者" icon="seti:notebook">
+    主著：[ゃー](https://x.com/reversed_R)
+  </Card>
+</CardGrid>
