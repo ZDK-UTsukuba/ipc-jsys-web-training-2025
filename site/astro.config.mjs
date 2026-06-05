@@ -19,7 +19,9 @@ export default defineConfig({
       sidebar: [
         {
           label: 'はじめに',
-          items: [{ label: 'ようこそ', link: '/' }],
+          items: [
+            { label: 'ようこそ', link: '/' },
+          ],
         },
         {
           label: 'Day 1 — HTML / CSS / JavaScript',
@@ -87,6 +89,12 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: '付録',
+          items: [
+            { label: 'Windows 環境構築', slug: 'windows-setup' },
+          ],
+        }
       ],
     }),
   ],
