@@ -23,98 +23,152 @@ export default defineConfig({
           items: [{ label: "ようこそ", link: "/" }],
         },
         {
-          label: "Day 1 — HTML / CSS / JavaScript",
+          label: "フロントエンド",
           items: [
-            { label: "Day 1 概要", slug: "frontend/day1" },
+            { label: "はじめに", slug: "frontend" },
             {
-              label: "Phase 1 — HTML",
-              collapsed: false,
+              label: "Day 1 — HTML / CSS / JavaScript",
               items: [
-                { label: "はじめに", slug: "frontend/day1/phase1" },
+                { label: "Day 1 概要", slug: "frontend/day1" },
                 {
-                  label: "1. HTML とは",
-                  slug: "frontend/day1/phase1/01-html-toha",
+                  label: "Phase 1 — HTML",
+                  collapsed: false,
+                  items: [
+                    { label: "はじめに", slug: "frontend/day1/phase1" },
+                    {
+                      label: "1. HTML とは",
+                      slug: "frontend/day1/phase1/01-html-toha",
+                    },
+                    {
+                      label: "2. HTML を構成する要素",
+                      slug: "frontend/day1/phase1/02-html-elements",
+                    },
+                    { label: "3. 演習", slug: "frontend/day1/phase1/03-enshu" },
+                  ],
                 },
                 {
-                  label: "2. HTML を構成する要素",
-                  slug: "frontend/day1/phase1/02-html-elements",
+                  label: "Phase 2 — CSS",
+                  items: [{ label: "はじめに", slug: "frontend/day1/phase2" }],
                 },
-                { label: "3. 演習", slug: "frontend/day1/phase1/03-enshu" },
+                {
+                  label: "Phase 3 — JavaScript",
+                  collapsed: true,
+                  items: [
+                    { label: "はじめに", slug: "frontend/day1/phase3" },
+                    {
+                      label: "1. はじめに",
+                      slug: "frontend/day1/phase3/01-hajimeni",
+                    },
+                    {
+                      label: "2. 数値演算",
+                      slug: "frontend/day1/phase3/02-suuchi-enzan",
+                    },
+                    {
+                      label: "3. 文字列",
+                      slug: "frontend/day1/phase3/03-mojiretsu",
+                    },
+                    {
+                      label: "4. 変数",
+                      slug: "frontend/day1/phase3/04-hensuu",
+                    },
+                    {
+                      label: "5. 配列",
+                      slug: "frontend/day1/phase3/05-hairetsu",
+                    },
+                    {
+                      label: "6. オブジェクト",
+                      slug: "frontend/day1/phase3/06-object",
+                    },
+                    {
+                      label: "7. 制御構文",
+                      slug: "frontend/day1/phase3/07-seigyo-koubun",
+                    },
+                    {
+                      label: "8. 関数",
+                      slug: "frontend/day1/phase3/08-kansuu",
+                    },
+                    { label: "9. DOM", slug: "frontend/day1/phase3/09-dom" },
+                  ],
+                },
               ],
             },
             {
-              label: "Phase 2 — CSS",
-              items: [{ label: "はじめに", slug: "frontend/day1/phase2" }],
+              label: "Day 2 — シェル / TypeScript",
+              items: [
+                { label: "Day 2 概要", slug: "frontend/day2" },
+                { label: "Phase 0 — シェル操作", slug: "frontend/day2/phase0" },
+                { label: "Phase 1 — TypeScript", slug: "frontend/day2/phase1" },
+              ],
             },
             {
-              label: "Phase 3 — JavaScript",
-              collapsed: true,
+              label: "Day 3 — React",
               items: [
-                { label: "はじめに", slug: "frontend/day1/phase3" },
+                { label: "Day 3 概要", slug: "frontend/day3" },
                 {
-                  label: "1. はじめに",
-                  slug: "frontend/day1/phase3/01-hajimeni",
+                  label: "Phase 1 — React",
+                  collapsed: true,
+                  items: [
+                    { label: "はじめに", slug: "frontend/day3/phase1" },
+                    {
+                      label: "1. はじめに",
+                      slug: "frontend/day3/phase1/01-hajimeni",
+                    },
+                    {
+                      label: "2. 環境構築",
+                      slug: "frontend/day3/phase1/02-kankyo-kouchiku",
+                    },
+                    {
+                      label: "3. 概論",
+                      slug: "frontend/day3/phase1/03-gairon",
+                    },
+                    { label: "4. TSX 1", slug: "frontend/day3/phase1/04-tsx1" },
+                    {
+                      label: "5. 状態",
+                      slug: "frontend/day3/phase1/05-joutai",
+                    },
+                    { label: "6. TSX 2", slug: "frontend/day3/phase1/06-tsx2" },
+                    {
+                      label: "7. 副作用",
+                      slug: "frontend/day3/phase1/07-fukusayou",
+                    },
+                    { label: "8. CSS", slug: "frontend/day3/phase1/08-css" },
+                    { label: "9. 演習", slug: "frontend/day3/phase1/09-enshu" },
+                  ],
                 },
-                {
-                  label: "2. 数値演算",
-                  slug: "frontend/day1/phase3/02-suuchi-enzan",
-                },
-                {
-                  label: "3. 文字列",
-                  slug: "frontend/day1/phase3/03-mojiretsu",
-                },
-                { label: "4. 変数", slug: "frontend/day1/phase3/04-hensuu" },
-                { label: "5. 配列", slug: "frontend/day1/phase3/05-hairetsu" },
-                {
-                  label: "6. オブジェクト",
-                  slug: "frontend/day1/phase3/06-object",
-                },
-                {
-                  label: "7. 制御構文",
-                  slug: "frontend/day1/phase3/07-seigyo-koubun",
-                },
-                { label: "8. 関数", slug: "frontend/day1/phase3/08-kansuu" },
-                { label: "9. DOM", slug: "frontend/day1/phase3/09-dom" },
               ],
             },
           ],
         },
         {
-          label: "Day 2 — シェル / TypeScript",
+          label: "バックエンド",
           items: [
-            { label: "Day 2 概要", slug: "frontend/day2" },
-            { label: "Phase 0 — シェル操作", slug: "frontend/day2/phase0" },
-            { label: "Phase 1 — TypeScript", slug: "frontend/day2/phase1" },
-          ],
-        },
-        {
-          label: "Day 3 — React",
-          items: [
-            { label: "Day 3 概要", slug: "frontend/day3" },
+            { label: "はじめに", slug: "backend" },
             {
-              label: "Phase 1 — React",
-              collapsed: true,
+              label: "1章: 知っておきたい! 知識編",
               items: [
-                { label: "はじめに", slug: "frontend/day3/phase1" },
+                { label: "1章 概要", slug: "backend/1-knowledge" },
                 {
-                  label: "1. はじめに",
-                  slug: "frontend/day3/phase1/01-hajimeni",
+                  label:
+                    "Phase1: Webアプリケーションを俯瞰してみよう/バックエンドって何をしているの?",
+                  items: [
+                    { label: "はじめに", slug: "backend/1-knowledge/phase1" },
+                  ],
                 },
                 {
-                  label: "2. 環境構築",
-                  slug: "frontend/day3/phase1/02-kankyo-kouchiku",
+                  label: "Phase2: バックエンドに使われる技術たち",
+                  items: [
+                    { label: "はじめに", slug: "backend/1-knowledge/phase2" },
+                  ],
                 },
-                { label: "3. 概論", slug: "frontend/day3/phase1/03-gairon" },
-                { label: "4. TSX 1", slug: "frontend/day3/phase1/04-tsx1" },
-                { label: "5. 状態", slug: "frontend/day3/phase1/05-joutai" },
-                { label: "6. TSX 2", slug: "frontend/day3/phase1/06-tsx2" },
-                {
-                  label: "7. 副作用",
-                  slug: "frontend/day3/phase1/07-fukusayou",
-                },
-                { label: "8. CSS", slug: "frontend/day3/phase1/08-css" },
-                { label: "9. 演習", slug: "frontend/day3/phase1/09-enshu" },
               ],
+            },
+            {
+              label: "2章: 楽しい、楽しい 実践編",
+              items: [{ label: "2章 概要", slug: "backend/2-practice" }],
+            },
+            {
+              label: "3章: 高度な話題! 発展編",
+              items: [{ label: "3章 概要", slug: "backend/3-improve" }],
             },
           ],
         },
