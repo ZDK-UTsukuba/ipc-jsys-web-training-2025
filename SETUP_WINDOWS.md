@@ -4,6 +4,53 @@
 
 チューターから指示のあったツールをインストールしてください。
 
+## PowerSellの使い方
+
+このドキュメントでは「PowerShell」というソフトをよく使います。PowerShellとはすべてのWindowsに最初からインストールされているターミナルです。
+
+「Windowsキー」を押して「PowerShell」で検索すると起動することができます。
+
+![Windowsのスタートメニューで「powershell」と検索し、Windows PowerShellが表示されている画面](images/powershell_search.png)
+
+起動すると次のような黒い画面が表示されます。上の「＋」を押すことで新しいタブを開くことができます。
+
+![Windows PowerShellの起動画面。上部の「+」ボタンを矢印で示している](images/powershell_new_tab.png)
+
+## Git
+
+PowerShellを起動し次のコマンドを入力してください。
+
+```
+winget install --id Git.Git -e --source winget
+```
+
+自動的にインストーラが起動し、しばらく待つとインストールが完了します。完了後新しいタブを開き次のコマンドでバージョン情報が表示されれば成功です。
+
+```
+git --version
+```
+
+## GitHub CLI
+
+PowerShellを起動し次のコマンドを入力してください。
+
+```
+winget install --id GitHub.cli -e --source winget
+```
+
+完了したらPowerShellで次のコマンドを入力します。いくつか入力を求められますがすべてデフォルトのまま変更せずにEnterを押します。
+
+```
+gh auth login
+```
+
+すると8桁のコードが表示されるのでコピーしてenterキーを押します。
+
+![PowerShellでgh auth loginを実行し、ワンタイムコードとEnterキーを押すよう促す画面](images/gh_auth_code.png)
+
+ブラウザが開くので自分のアカウントを選択し先程コピーしたコードを入力します。最終的に`Logged in as <アカウント名>`とターミナル側に表示されたらログイン完了です。
+
+
 ## Bun
 
 PowerShell（スタートメニューで「PowerShell」と検索して起動）を開き、次のコマンドを貼り付けて実行します。
@@ -32,8 +79,6 @@ PS C:\Users\appare45> bun -v
 ```
 
 ## Node.js
-
-Node.jsはJavaScriptをサーバーサイドで実行するためのランタイムである。ここでは **NVM for Windows**（Node Version Manager）を使ってインストールする。NVMを使うと、Node.jsのバージョンを簡単に切り替えられる。
 
 ### 1. インストーラのダウンロード
 
