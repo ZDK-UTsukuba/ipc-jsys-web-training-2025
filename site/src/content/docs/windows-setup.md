@@ -1,4 +1,7 @@
-# Windows向け環境構築ガイド
+---
+title: Windows向け環境構築ガイド
+description: WindowsでBun・Node.js・Docker・Git・GitHub CLIをインストールする手順
+---
 
 このドキュメントでは、Windowsでの環境構築の方法について解説します。
 
@@ -10,11 +13,11 @@
 
 「Windowsキー」を押して「PowerShell」で検索すると起動することができます。
 
-![Windowsのスタートメニューで「powershell」と検索し、Windows PowerShellが表示されている画面](images/powershell_search.png)
+![Windowsのスタートメニューで「powershell」と検索し、Windows PowerShellが表示されている画面](_images/powershell_search.png)
 
 起動すると次のような黒い画面が表示されます。上の「＋」を押すことで新しいタブを開くことができます。
 
-![Windows PowerShellの起動画面。上部の「+」ボタンを矢印で示している](images/powershell_new_tab.png)
+![Windows PowerShellの起動画面。上部の「+」ボタンを矢印で示している](_images/powershell_new_tab.png)
 
 ## Git
 
@@ -46,7 +49,7 @@ gh auth login
 
 すると8桁のコードが表示されるのでコピーしてenterキーを押します。
 
-![PowerShellでgh auth loginを実行し、ワンタイムコードとEnterキーを押すよう促す画面](images/gh_auth_code.png)
+![PowerShellでgh auth loginを実行し、ワンタイムコードとEnterキーを押すよう促す画面](_images/gh_auth_code.png)
 
 ブラウザが開くので自分のアカウントを選択し先程コピーしたコードを入力します。最終的に`Logged in as <アカウント名>`とターミナル側に表示されたらログイン完了です。
 
@@ -90,35 +93,35 @@ PS C:\Users\appare45> bun -v
 
 「I accept the agreement」を選択して「Next」をクリックする。
 
-![NVM for Windowsのライセンス同意画面。「I accept the agreement」が選択されている](images/nvm_license.png)
+![NVM for Windowsのライセンス同意画面。「I accept the agreement」が選択されている](_images/nvm_license.png)
 
 デフォルト（`C:\Users\<ユーザー名>\AppData\Local\nvm`）のまま「Next」をクリック。
 
-![NVMのインストール先ディレクトリ選択画面](images/nvm_install_path.png)
+![NVMのインストール先ディレクトリ選択画面](_images/nvm_install_path.png)
 
 デフォルトのまま「Next」をクリック
 
-![NVMが管理するNode.jsのシンボリックリンク先パス選択画面](images/nvm_symlink_path.png)
+![NVMが管理するNode.jsのシンボリックリンク先パス選択画面](_images/nvm_symlink_path.png)
 
 すべてのチェックを外して「Next」をクリックする。
 
-![NVMのデスクトップ通知設定画面。チェックボックスがすべてオフになっている](images/nvm_notifications.png)
+![NVMのデスクトップ通知設定画面。チェックボックスがすべてオフになっている](_images/nvm_notifications.png)
 
 空欄のまま「Next」をクリックする。
 
-![NVM作者へのメールアドレス登録画面。入力欄は空欄のまま](images/nvm_email.png)
+![NVM作者へのメールアドレス登録画面。入力欄は空欄のまま](_images/nvm_email.png)
 
 Install」をクリックしてインストールを開始する。
 
-![NVMのインストール準備完了確認画面](images/nvm_ready.png)
+![NVMのインストール準備完了確認画面](_images/nvm_ready.png)
 
 「Finish」をクリックする。
 
-![NVMセットアップウィザード完了画面。「Open with Powershell」がチェックされている](images/nvm_complete.png)
+![NVMセットアップウィザード完了画面。「Open with Powershell」がチェックされている](_images/nvm_complete.png)
 
 Windows PowerShellが自動的に起動し、「Welcome to NVM for Windows v1.2.2」と表示されたら成功です。
 
-![PowerShellに「Welcome to NVM for Windows v1.2.2」と表示されたインストール完了画面](images/nvm_welcome.png)
+![PowerShellに「Welcome to NVM for Windows v1.2.2」と表示されたインストール完了画面](_images/nvm_welcome.png)
 
 ### 3. Node.jsをインストールする
 
@@ -159,7 +162,7 @@ wsl --install
 
 インストールが完了すると次のように表示されます。ユーザー名とパスワードの入力を求められるので好きなユーザー名とパスワードを設定します。
 
-![PowerShellでwsl --installコマンドを実行し、UbuntuのWSLインストールが完了した画面](images/wsl_install.png)
+![PowerShellでwsl --installコマンドを実行し、UbuntuのWSLインストールが完了した画面](_images/wsl_install.png)
 
 インストール後、次のコマンドでWSLのバージョンを確認します。
 
@@ -186,24 +189,24 @@ Windows バージョン: 10.0.26200.8457
 
 ダウンロードしたインストーラを起動すると設定画面が表示されるので、デフォルトのまま「OK」をクリックする。
 
-![Docker Desktopインストーラの設定画面。「All-users installation」が選択されOKボタンが示されている](images/docker_config.png)
+![Docker Desktopインストーラの設定画面。「All-users installation」が選択されOKボタンが示されている](_images/docker_config.png)
 
 インストールが完了したら「Close and restart」をクリックしてPCを再起動します。
 
-![Docker Desktop 4.75.0のインストール完了画面。「Close and restart」ボタンが示されている](images/docker_install_complete.png)
+![Docker Desktop 4.75.0のインストール完了画面。「Close and restart」ボタンが示されている](_images/docker_install_complete.png)
 
 ### 3. Docker Desktopの初期設定
 
 再起動後、Docker Desktopを起動します。利用規約（Docker Subscription Service Agreement）が表示されたら「Accept」をクリックします。
 
-![Docker Desktop利用規約（Docker Subscription Service Agreement）の同意画面。「Accept」ボタンが示されている](images/docker_agreement.png)
+![Docker Desktop利用規約（Docker Subscription Service Agreement）の同意画面。「Accept」ボタンが示されている](_images/docker_agreement.png)
 
 「Welcome to Docker」画面が表示されたら、右上の「Skip」をクリックして先に進みます（アカウントは不要）。
 
-![Docker Desktopの「Welcome to Docker」サインイン画面。右上にSkipボタンがある](images/docker_welcome.png)
+![Docker Desktopの「Welcome to Docker」サインイン画面。右上にSkipボタンがある](_images/docker_welcome.png)
 
 ### 4. 動作確認
 
 Docker Desktopのダッシュボードが表示され、左下に「Engine running」と表示されれば正常に起動しています（少し時間がかかります）。
 
-![Docker Desktopのダッシュボード画面。左下に「Engine running」と表示されDockerが正常に起動している](images/docker_dashboard.png)
+![Docker Desktopのダッシュボード画面。左下に「Engine running」と表示されDockerが正常に起動している](_images/docker_dashboard.png)
