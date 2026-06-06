@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://web-training-2026.jsys.workers.dev",
   integrations: [
     starlight({
       title: "jsys Web 研修 2026",
@@ -185,6 +185,10 @@ export default defineConfig({
               items: [{ label: "3章 概要", slug: "backend/3-improve" }],
             },
           ],
+        },
+        {
+          label: "付録",
+          items: [{ label: "Windows 環境構築", slug: "windows-setup" }],
         },
       ],
     }),

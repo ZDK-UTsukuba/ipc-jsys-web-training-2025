@@ -31,7 +31,7 @@ Node.js のインストール方法は主に 2 つあります：
 
 nvm は Node.js のバージョンを管理できるツールです。インストール自体は前者の方が圧倒的に簡単ですが、今後のことも考慮し本書では nvm を利用していきます。
 
-- [Windows](https://zenn.dev/y_2_k/articles/e419bcf729e82d)
+- [Windows](/windows-setup#nodejs)
 - [macOS](https://qiita.com/ffggss/items/94f1c4c5d311db2ec71a)
 
 
