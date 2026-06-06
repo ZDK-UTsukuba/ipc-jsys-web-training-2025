@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://web-training-2026.jsys.workers.dev',
   integrations: [
     starlight({
       title: 'Web 研修 2025 ドキュざうるす',
