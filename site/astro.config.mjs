@@ -150,15 +150,11 @@ export default defineConfig({
                 {
                   label:
                     "Phase 1: Webアプリケーションを俯瞰してみよう/バックエンドって何をしているの?",
-                  items: [
-                    { label: "はじめに", slug: "backend/1-knowledge/phase1" },
-                  ],
+                  slug: "backend/1-knowledge/phase1",
                 },
                 {
                   label: "Phase 2: バックエンドに使われる技術たち",
-                  items: [
-                    { label: "はじめに", slug: "backend/1-knowledge/phase2" },
-                  ],
+                  slug: "backend/1-knowledge/phase2",
                 },
               ],
             },
