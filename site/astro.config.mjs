@@ -149,13 +149,13 @@ export default defineConfig({
                 { label: "1章 概要", slug: "backend/1-knowledge" },
                 {
                   label:
-                    "Phase1: Webアプリケーションを俯瞰してみよう/バックエンドって何をしているの?",
+                    "Phase 1: Webアプリケーションを俯瞰してみよう/バックエンドって何をしているの?",
                   items: [
                     { label: "はじめに", slug: "backend/1-knowledge/phase1" },
                   ],
                 },
                 {
-                  label: "Phase2: バックエンドに使われる技術たち",
+                  label: "Phase 2: バックエンドに使われる技術たち",
                   items: [
                     { label: "はじめに", slug: "backend/1-knowledge/phase2" },
                   ],
@@ -164,7 +164,25 @@ export default defineConfig({
             },
             {
               label: "2章: 楽しい、楽しい 実践編",
-              items: [{ label: "2章 概要", slug: "backend/2-practice" }],
+              items: [
+                { label: "2章 概要", slug: "backend/2-practice" },
+                {
+                  label: "Phase 1: 環境構築しよう",
+                  slug: "backend/2-practice/phase1",
+                },
+                {
+                  label: "Phase 2: リクエストを受けて適当なメッセージを返そう",
+                  slug: "backend/2-practice/phase2",
+                },
+                {
+                  label: "Phase 3: データベースを読んでみよう",
+                  slug: "backend/2-practice/phase3",
+                },
+                {
+                  label: "Phase 4: データベースに永続化しよう",
+                  slug: "backend/2-practice/phase4",
+                },
+              ],
             },
             {
               label: "3章: 高度な話題! 発展編",
