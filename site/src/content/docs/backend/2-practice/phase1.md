@@ -11,13 +11,15 @@ description: "環境構築をします。"
 
 これに沿って実装を進めていきます。
 
-まず、
+テンプレートのリポジトリを自分のGitHubアカウント以下にForkしてください。
+
+Forkした先のリポジトリを
 
 ```sh
-git clone https://github.com/sohosai/web-training-2026-template
+git clone https://github.com/<あなたのGitHubアカウントのユーザID>/web-training-2026-template
 ```
 
-して、リポジトリをcloneしましょう。
+というようにcloneしてローカルに持ってきましょう。
 
 cloneしたリポジトリを眺めてみると、
 
